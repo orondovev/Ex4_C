@@ -1,10 +1,13 @@
 #include <stddef.h>
 #include <stdlib.h>
+#include <stdbool.h>
 //#include "graph.h"
 
 typedef struct GRAPH_NODE_ *pnode;
-
 pnode new_node(int, struct GRAPH_NODE_ *);
+void free_edges(pnode);
+void delete_node_cmd(pnode *, pnode, bool);
+void free_all_edges();
 
 typedef struct edge_ {
     pnode endpoint;
@@ -27,13 +30,16 @@ void insert_node_cmd(pnode *head, int data) {
     }
     pnode *phead;
     *phead = *head;
+    pnode *prev = head;
     while (*phead) {
+        prev = &((*phead)->next);
         if ((*phead)->node_num == data) {
-            //todo change edges
+            delete_node_cmd(head,*phead,false);
+            break;
         }
         phead = &((*phead)->next);
     }
-    *phead = new_node(data, NULL);
+    *phead = new_node(data, *prev);
 
 }
 
@@ -80,5 +86,63 @@ pedge new_edge(int weight, pnode dest, pedge next) {
     return curr_edge;
 }
 
+void delete_node_cmd(pnode *head, pnode data, bool flag) {
+    if (*head == NULL) {
+        return;
+    }
+    pnode p = (*head)->next;
+    pnode *prev = head;
 
+    while (p) {
+        if (p->node_num == data->node_num) {
+            *prev = p->next;
+            if(flag) {
+                free_all_edges(head,p);
+            } else{
+                free_edges(p);
+            }
+            free(p);
+            p = *prev;
+        }
+        else{
+            prev= &(p->next);
+            p = p->next;
+        }
+    }
+}
+
+void free_all_edges(pnode *head,pnode node) {
+    if(node->edges) {
+        free_edges(node);
+    }
+    pnode p = *head;
+    while (p) {
+        pedge *prev = &((p)->edges);
+        pedge e = ((p)->edges);
+        while (e && p->node_num != node->node_num) {
+            if(e->endpoint->node_num == node->node_num) {
+                *prev = e->next;
+                free(e);
+                e = *prev;
+            } else {
+                prev = &(e->next);
+                e = e->next;
+            }
+        }
+        p = p->next;
+    }
+}
+
+void free_edges(pnode node){
+    if(node->edges == NULL){
+        return;
+    }
+    pedge e = node->edges;
+    pedge *prev = &(node->edges);
+    while(e){
+        *prev = e->next;
+        free(e);
+        e = *prev;
+    }
+}
 
