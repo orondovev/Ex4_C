@@ -7,8 +7,8 @@ typedef struct GRAPH_NODE_ *pnode;
 pnode new_node(int, struct GRAPH_NODE_ *);
 void free_edges(pnode);
 void delete_node_cmd(pnode *, pnode, bool);
-void free_all_edges();
-
+void free_all_edges(pnode *, pnode);
+void deleteGraph_cmd(pnode*);
 typedef struct edge_ {
     pnode endpoint;
     int weight;
@@ -146,3 +146,17 @@ void free_edges(pnode node){
     }
 }
 
+void deleteGraph_cmd(pnode* head) {
+    if(head == NULL) {
+        return;
+    }
+    while (*head) {
+        delete_node_cmd(head,*head,true);
+    }
+}
+
+void build_graph_cmd(pnode *head) {
+    if(head != NULL) {
+        deleteGraph_cmd(head);
+    }
+}
