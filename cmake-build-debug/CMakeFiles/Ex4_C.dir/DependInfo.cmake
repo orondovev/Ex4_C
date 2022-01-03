@@ -1,0 +1,23 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/mnt/c/Users/אורון דובב/Desktop/Ex4_C/algo.c" "/mnt/c/Users/אורון דובב/Desktop/Ex4_C/cmake-build-debug/CMakeFiles/Ex4_C.dir/algo.c.o"
+  "/mnt/c/Users/אורון דובב/Desktop/Ex4_C/edges.c" "/mnt/c/Users/אורון דובב/Desktop/Ex4_C/cmake-build-debug/CMakeFiles/Ex4_C.dir/edges.c.o"
+  "/mnt/c/Users/אורון דובב/Desktop/Ex4_C/main.c" "/mnt/c/Users/אורון דובב/Desktop/Ex4_C/cmake-build-debug/CMakeFiles/Ex4_C.dir/main.c.o"
+  "/mnt/c/Users/אורון דובב/Desktop/Ex4_C/nodes.c" "/mnt/c/Users/אורון דובב/Desktop/Ex4_C/cmake-build-debug/CMakeFiles/Ex4_C.dir/nodes.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
