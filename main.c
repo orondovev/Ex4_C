@@ -1,6 +1,6 @@
 #include <stdio.h>
+#include "graph.h"
 
 int main() {
-    printf("Hello, World!\n");
-    return 0;
+//    build_graph_cmd()
 }

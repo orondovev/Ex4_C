@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/אורון דובב/Desktop/Ex4_C"
+CMAKE_SOURCE_DIR = /mnt/c/Users/oron/Desktop/GitHub/Ex4_C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/אורון דובב/Desktop/Ex4_C/cmake-build-debug"
+CMAKE_BINARY_DIR = /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/אורון דובב/Desktop/Ex4_C/cmake-build-debug/CMakeFiles" "/mnt/c/Users/אורון דובב/Desktop/Ex4_C/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/אורון דובב/Desktop/Ex4_C/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,33 @@ edges.c.s:
 	$(MAKE) -f CMakeFiles/Ex4_C.dir/build.make CMakeFiles/Ex4_C.dir/edges.c.s
 .PHONY : edges.c.s
 
+graph.o: graph.c.o
+
+.PHONY : graph.o
+
+# target to build an object file
+graph.c.o:
+	$(MAKE) -f CMakeFiles/Ex4_C.dir/build.make CMakeFiles/Ex4_C.dir/graph.c.o
+.PHONY : graph.c.o
+
+graph.i: graph.c.i
+
+.PHONY : graph.i
+
+# target to preprocess a source file
+graph.c.i:
+	$(MAKE) -f CMakeFiles/Ex4_C.dir/build.make CMakeFiles/Ex4_C.dir/graph.c.i
+.PHONY : graph.c.i
+
+graph.s: graph.c.s
+
+.PHONY : graph.s
+
+# target to generate assembly for a file
+graph.c.s:
+	$(MAKE) -f CMakeFiles/Ex4_C.dir/build.make CMakeFiles/Ex4_C.dir/graph.c.s
+.PHONY : graph.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -246,6 +273,9 @@ help:
 	@echo "... edges.o"
 	@echo "... edges.i"
 	@echo "... edges.s"
+	@echo "... graph.o"
+	@echo "... graph.i"
+	@echo "... graph.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

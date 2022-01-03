@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/c/Users/אורון דובב/Desktop/Ex4_C/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/c/Users/אורון דובב/Desktop/Ex4_C/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/c/Users/אורון דובב/Desktop/Ex4_C/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Ex4_C">
-				<Option output="/mnt/c/Users/אורון דובב/Desktop/Ex4_C/cmake-build-debug/Ex4_C" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/אורון דובב/Desktop/Ex4_C/cmake-build-debug"/>
+				<Option output="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Ex4_C" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -50,15 +50,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ex4_C"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ex4_C"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Ex4_C/fast">
-				<Option output="/mnt/c/Users/אורון דובב/Desktop/Ex4_C/cmake-build-debug/Ex4_C" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/אורון דובב/Desktop/Ex4_C/cmake-build-debug"/>
+				<Option output="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Ex4_C" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -69,35 +69,41 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ex4_C/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/אורון\ דובב/Desktop/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ex4_C/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/c/Users/אורון דובב/Desktop/Ex4_C/algo.c">
+		<Unit filename="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/algo.c">
 			<Option target="Ex4_C"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/אורון דובב/Desktop/Ex4_C/algo.h">
+		<Unit filename="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/algo.h">
 			<Option target="Ex4_C"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/אורון דובב/Desktop/Ex4_C/edges.c">
+		<Unit filename="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/edges.c">
 			<Option target="Ex4_C"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/אורון דובב/Desktop/Ex4_C/edges.h">
+		<Unit filename="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/edges.h">
 			<Option target="Ex4_C"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/אורון דובב/Desktop/Ex4_C/main.c">
+		<Unit filename="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/graph.c">
 			<Option target="Ex4_C"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/אורון דובב/Desktop/Ex4_C/nodes.c">
+		<Unit filename="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/graph.h">
 			<Option target="Ex4_C"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/אורון דובב/Desktop/Ex4_C/nodes.h">
+		<Unit filename="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/main.c">
 			<Option target="Ex4_C"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/אורון דובב/Desktop/Ex4_C/CMakeLists.txt">
+		<Unit filename="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/nodes.c">
+			<Option target="Ex4_C"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/nodes.h">
+			<Option target="Ex4_C"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
