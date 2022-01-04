@@ -3,6 +3,7 @@
 //
 #include "graph.h"
 #include <math.h>
+#include "limits.h"
 #include <stdlib.h>
 #include <memory.h>
 #include <stdio.h>
@@ -89,9 +90,26 @@ void shortsPath_cmd(pnode head, int src, int dest) {
     } else {
         printf("Dijsktra shortest path: %d", (int) dist[dest]);
     }
-    return_default(&head);
+//    return_default(&head);
+}
+
+int cmpfunc (const void * a, const void * b) //what is it returning?
+{
+    return ( *(int*)a - *(int*)b ); //What is a and b?
+}
+
+void TSP_rec(pnode head, int cities[], int len) {
+
 }
 
 void TSP_cmd(pnode head, int cities[], int len) {
-
+    float min = INFINITY;
+    pnode *p = &head;
+    int path[len];
+    int miss[len];
+    qsort(cities, sizeof(int ), len, cmpfunc);
+    while (*p) {
+        TSP_rec(head,cities,len);
+    }
 }
+
