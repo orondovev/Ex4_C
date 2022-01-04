@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <math.h>
 //#include "graph.h"
 
 typedef struct GRAPH_NODE_ *pnode;
@@ -24,6 +25,8 @@ typedef struct GRAPH_NODE_ {
     int node_num; // =1
     pedge edges; // edge_ (w = 5, endpoint = 2)
     struct GRAPH_NODE_ *next;
+    int weight;
+    int state;
 } node, *pnode;
 
 void insert_node_cmd(pnode *head, int data) {
@@ -54,6 +57,8 @@ pnode new_node(int id, struct GRAPH_NODE_ *next) {
     new_node->node_num = id;
     new_node->next = next;
     new_node->edges = NULL;
+    new_node->weight = INFINITY;
+    new_node->state = 0;
 
     return new_node;
 }

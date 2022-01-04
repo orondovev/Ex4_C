@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "graph.h"
 
+static int size;
+
 int main() {
     char cmd;
     int node_size;
