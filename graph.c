@@ -8,6 +8,7 @@
 typedef struct GRAPH_NODE_ *pnode;
 pnode new_node(int, struct GRAPH_NODE_ *);
 void free_edges(pnode);
+pnode get_node(pnode *, int );
 void delete_node_cmd(pnode *, pnode, bool);
 void free_all_edges(pnode *, pnode);
 void deleteGraph_cmd(pnode*);
