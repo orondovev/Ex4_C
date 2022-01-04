@@ -1,6 +1,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <stdio.h>
 //#include "graph.h"
 
 typedef struct GRAPH_NODE_ *pnode;
@@ -9,6 +10,7 @@ void free_edges(pnode);
 void delete_node_cmd(pnode *, pnode, bool);
 void free_all_edges(pnode *, pnode);
 void deleteGraph_cmd(pnode*);
+void printGraph_cmd(pnode);
 typedef struct edge_ {
     pnode endpoint;
     int weight;
@@ -160,3 +162,26 @@ void build_graph_cmd(pnode *head) {
         deleteGraph_cmd(head);
     }
 }
+
+void print_edges(pedge eHead) {
+    printf("edges[");
+    while (eHead) {
+        printf("endP: %d, W: %d", eHead->endpoint->node_num, eHead->weight);
+        eHead = eHead->next;
+    }
+    printf("] ")
+}
+
+void print_node(pnode head) {
+    printf("ID: %d ", head->node_num);
+    print_edges(head->edges);
+    printf("Next: %d \t", head->node_num);
+}
+
+void printGraph_cmd(pnode head) {
+    while (head) {
+        print_node(head);
+        head = head->next;
+    }
+}
+

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/oron/Desktop/GitHub/Ex4_C
+CMAKE_SOURCE_DIR = /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Ex4_C.dir/depend.make
@@ -59,74 +59,46 @@ include CMakeFiles/Ex4_C.dir/flags.make
 
 CMakeFiles/Ex4_C.dir/main.c.o: CMakeFiles/Ex4_C.dir/flags.make
 CMakeFiles/Ex4_C.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Ex4_C.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Ex4_C.dir/main.c.o   -c /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Ex4_C.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Ex4_C.dir/main.c.o   -c /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/main.c
 
 CMakeFiles/Ex4_C.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Ex4_C.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/main.c > CMakeFiles/Ex4_C.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/main.c > CMakeFiles/Ex4_C.dir/main.c.i
 
 CMakeFiles/Ex4_C.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Ex4_C.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/main.c -o CMakeFiles/Ex4_C.dir/main.c.s
-
-CMakeFiles/Ex4_C.dir/edges.c.o: CMakeFiles/Ex4_C.dir/flags.make
-CMakeFiles/Ex4_C.dir/edges.c.o: ../edges.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Ex4_C.dir/edges.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Ex4_C.dir/edges.c.o   -c /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/edges.c
-
-CMakeFiles/Ex4_C.dir/edges.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Ex4_C.dir/edges.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/edges.c > CMakeFiles/Ex4_C.dir/edges.c.i
-
-CMakeFiles/Ex4_C.dir/edges.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Ex4_C.dir/edges.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/edges.c -o CMakeFiles/Ex4_C.dir/edges.c.s
-
-CMakeFiles/Ex4_C.dir/nodes.c.o: CMakeFiles/Ex4_C.dir/flags.make
-CMakeFiles/Ex4_C.dir/nodes.c.o: ../nodes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Ex4_C.dir/nodes.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Ex4_C.dir/nodes.c.o   -c /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/nodes.c
-
-CMakeFiles/Ex4_C.dir/nodes.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Ex4_C.dir/nodes.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/nodes.c > CMakeFiles/Ex4_C.dir/nodes.c.i
-
-CMakeFiles/Ex4_C.dir/nodes.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Ex4_C.dir/nodes.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/nodes.c -o CMakeFiles/Ex4_C.dir/nodes.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/main.c -o CMakeFiles/Ex4_C.dir/main.c.s
 
 CMakeFiles/Ex4_C.dir/algo.c.o: CMakeFiles/Ex4_C.dir/flags.make
 CMakeFiles/Ex4_C.dir/algo.c.o: ../algo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Ex4_C.dir/algo.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Ex4_C.dir/algo.c.o   -c /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/algo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Ex4_C.dir/algo.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Ex4_C.dir/algo.c.o   -c /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/algo.c
 
 CMakeFiles/Ex4_C.dir/algo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Ex4_C.dir/algo.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/algo.c > CMakeFiles/Ex4_C.dir/algo.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/algo.c > CMakeFiles/Ex4_C.dir/algo.c.i
 
 CMakeFiles/Ex4_C.dir/algo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Ex4_C.dir/algo.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/algo.c -o CMakeFiles/Ex4_C.dir/algo.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/algo.c -o CMakeFiles/Ex4_C.dir/algo.c.s
 
 CMakeFiles/Ex4_C.dir/graph.c.o: CMakeFiles/Ex4_C.dir/flags.make
 CMakeFiles/Ex4_C.dir/graph.c.o: ../graph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Ex4_C.dir/graph.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Ex4_C.dir/graph.c.o   -c /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/graph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Ex4_C.dir/graph.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Ex4_C.dir/graph.c.o   -c /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/graph.c
 
 CMakeFiles/Ex4_C.dir/graph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Ex4_C.dir/graph.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/graph.c > CMakeFiles/Ex4_C.dir/graph.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/graph.c > CMakeFiles/Ex4_C.dir/graph.c.i
 
 CMakeFiles/Ex4_C.dir/graph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Ex4_C.dir/graph.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/graph.c -o CMakeFiles/Ex4_C.dir/graph.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/graph.c -o CMakeFiles/Ex4_C.dir/graph.c.s
 
 # Object files for target Ex4_C
 Ex4_C_OBJECTS = \
 "CMakeFiles/Ex4_C.dir/main.c.o" \
-"CMakeFiles/Ex4_C.dir/edges.c.o" \
-"CMakeFiles/Ex4_C.dir/nodes.c.o" \
 "CMakeFiles/Ex4_C.dir/algo.c.o" \
 "CMakeFiles/Ex4_C.dir/graph.c.o"
 
@@ -134,13 +106,11 @@ Ex4_C_OBJECTS = \
 Ex4_C_EXTERNAL_OBJECTS =
 
 Ex4_C: CMakeFiles/Ex4_C.dir/main.c.o
-Ex4_C: CMakeFiles/Ex4_C.dir/edges.c.o
-Ex4_C: CMakeFiles/Ex4_C.dir/nodes.c.o
 Ex4_C: CMakeFiles/Ex4_C.dir/algo.c.o
 Ex4_C: CMakeFiles/Ex4_C.dir/graph.c.o
 Ex4_C: CMakeFiles/Ex4_C.dir/build.make
 Ex4_C: CMakeFiles/Ex4_C.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable Ex4_C"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable Ex4_C"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Ex4_C.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +123,6 @@ CMakeFiles/Ex4_C.dir/clean:
 .PHONY : CMakeFiles/Ex4_C.dir/clean
 
 CMakeFiles/Ex4_C.dir/depend:
-	cd /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/oron/Desktop/GitHub/Ex4_C /mnt/c/Users/oron/Desktop/GitHub/Ex4_C /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles/Ex4_C.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug/CMakeFiles/Ex4_C.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Ex4_C.dir/depend
 

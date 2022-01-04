@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/oron/Desktop/GitHub/Ex4_C
+CMAKE_SOURCE_DIR = /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug/CMakeFiles /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,33 +150,6 @@ algo.c.s:
 	$(MAKE) -f CMakeFiles/Ex4_C.dir/build.make CMakeFiles/Ex4_C.dir/algo.c.s
 .PHONY : algo.c.s
 
-edges.o: edges.c.o
-
-.PHONY : edges.o
-
-# target to build an object file
-edges.c.o:
-	$(MAKE) -f CMakeFiles/Ex4_C.dir/build.make CMakeFiles/Ex4_C.dir/edges.c.o
-.PHONY : edges.c.o
-
-edges.i: edges.c.i
-
-.PHONY : edges.i
-
-# target to preprocess a source file
-edges.c.i:
-	$(MAKE) -f CMakeFiles/Ex4_C.dir/build.make CMakeFiles/Ex4_C.dir/edges.c.i
-.PHONY : edges.c.i
-
-edges.s: edges.c.s
-
-.PHONY : edges.s
-
-# target to generate assembly for a file
-edges.c.s:
-	$(MAKE) -f CMakeFiles/Ex4_C.dir/build.make CMakeFiles/Ex4_C.dir/edges.c.s
-.PHONY : edges.c.s
-
 graph.o: graph.c.o
 
 .PHONY : graph.o
@@ -231,33 +204,6 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/Ex4_C.dir/build.make CMakeFiles/Ex4_C.dir/main.c.s
 .PHONY : main.c.s
 
-nodes.o: nodes.c.o
-
-.PHONY : nodes.o
-
-# target to build an object file
-nodes.c.o:
-	$(MAKE) -f CMakeFiles/Ex4_C.dir/build.make CMakeFiles/Ex4_C.dir/nodes.c.o
-.PHONY : nodes.c.o
-
-nodes.i: nodes.c.i
-
-.PHONY : nodes.i
-
-# target to preprocess a source file
-nodes.c.i:
-	$(MAKE) -f CMakeFiles/Ex4_C.dir/build.make CMakeFiles/Ex4_C.dir/nodes.c.i
-.PHONY : nodes.c.i
-
-nodes.s: nodes.c.s
-
-.PHONY : nodes.s
-
-# target to generate assembly for a file
-nodes.c.s:
-	$(MAKE) -f CMakeFiles/Ex4_C.dir/build.make CMakeFiles/Ex4_C.dir/nodes.c.s
-.PHONY : nodes.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -270,18 +216,12 @@ help:
 	@echo "... algo.o"
 	@echo "... algo.i"
 	@echo "... algo.s"
-	@echo "... edges.o"
-	@echo "... edges.i"
-	@echo "... edges.s"
 	@echo "... graph.o"
 	@echo "... graph.i"
 	@echo "... graph.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... nodes.o"
-	@echo "... nodes.i"
-	@echo "... nodes.s"
 .PHONY : help
 
 
