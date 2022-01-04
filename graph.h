@@ -20,6 +20,8 @@ void build_graph_cmd(pnode *head);
 
 void insert_node_cmd(pnode *head, int data);
 
+pnode get_node(pnode *, int );
+
 void insert_edge(pnode *head, int, int, int);
 
 void delete_node_cmd(pnode *head, pnode data);
