@@ -11,6 +11,7 @@ void delete_node_cmd(pnode *, pnode, bool);
 void free_all_edges(pnode *, pnode);
 void deleteGraph_cmd(pnode*);
 void printGraph_cmd(pnode);
+
 typedef struct edge_ {
     pnode endpoint;
     int weight;
@@ -30,8 +31,8 @@ void insert_node_cmd(pnode *head, int data) {
         *head = new_node(data, NULL);
         return;
     }
-    pnode *phead;
-    *phead = *head;
+    pnode *phead = NULL;
+    phead = head;
     pnode *prev = head;
     while (*phead) {
         prev = &((*phead)->next);
@@ -57,14 +58,30 @@ pnode new_node(int id, struct GRAPH_NODE_ *next) {
     return new_node;
 }
 
-void insert_edge(pnode *head, pnode src, int weight, pnode dest) {
+pnode get_node(pnode *head, int data) {
+    if(*head == NULL) {
+        return NULL;
+    }
+    pnode p = *head;
+    while (p) {
+        if(p->node_num == data) {
+            break;
+        } else {
+            p = p->next;
+        }
+    }
+    return p;
+}
 
+void insert_edge(pnode *head, int src_, int weight, int dest_) {
+    pnode src = get_node(head, src_);
+    pnode dest = get_node(head, dest_);
     pnode *phead;
-    *phead = *head;
+    phead = head;
     while (*phead) {
         if ((*phead)->node_num == src->node_num) {
             pedge *temp_edge = NULL;
-            *temp_edge = ((*phead)->edges);
+            temp_edge = &((*phead)->edges);
             while (*temp_edge) {
                 temp_edge = &((*temp_edge)->next);
             }
@@ -149,16 +166,17 @@ void free_edges(pnode node){
 }
 
 void deleteGraph_cmd(pnode* head) {
-    if(head == NULL) {
+    if(*head == NULL) {
         return;
     }
     while (*head) {
         delete_node_cmd(head,*head,true);
     }
+    *head = NULL;
 }
 
 void build_graph_cmd(pnode *head) {
-    if(head != NULL) {
+    if(*head != NULL) {
         deleteGraph_cmd(head);
     }
 }
@@ -166,10 +184,10 @@ void build_graph_cmd(pnode *head) {
 void print_edges(pedge eHead) {
     printf("edges[");
     while (eHead) {
-        printf("endP: %d, W: %d", eHead->endpoint->node_num, eHead->weight);
+        printf(" endP: %d, W: %d ", eHead->endpoint->node_num, eHead->weight);
         eHead = eHead->next;
     }
-    printf("] ")
+    printf("] ");
 }
 
 void print_node(pnode head) {
