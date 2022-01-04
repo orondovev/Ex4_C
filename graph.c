@@ -199,7 +199,12 @@ void print_edges(pedge eHead) {
 void print_node(pnode head) {
     printf("ID: %d ", head->node_num);
     print_edges(head->edges);
-    printf("Next: %d \t", head->node_num);
+    if(head->next) {
+        printf("Next: %d \t", head->next->node_num);
+    } else {
+        printf("Next: NULL \t");
+    }
+
 }
 
 void printGraph_cmd(pnode head) {

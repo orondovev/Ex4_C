@@ -30,10 +30,10 @@ int main() {
                     dest_ = get_node(&head, dest);
                     insert_edge(&head, src_->node_num, weight, dest_->node_num);
                 }
+                printGraph_cmd(head);
             }
         }
     }
-    printGraph_cmd(head);
 
 
     return 0;
