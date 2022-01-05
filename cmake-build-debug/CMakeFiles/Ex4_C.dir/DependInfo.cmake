@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/algo.c" "/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles/Ex4_C.dir/algo.c.o"
-  "/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/graph.c" "/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles/Ex4_C.dir/graph.c.o"
-  "/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/main.c" "/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/cmake-build-debug/CMakeFiles/Ex4_C.dir/main.c.o"
+  "/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/algo.c" "/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug/CMakeFiles/Ex4_C.dir/algo.c.o"
+  "/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/graph.c" "/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug/CMakeFiles/Ex4_C.dir/graph.c.o"
+  "/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/main.c" "/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/cmake-build-debug/CMakeFiles/Ex4_C.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
