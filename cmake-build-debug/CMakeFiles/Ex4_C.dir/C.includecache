@@ -6,23 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/algo.c
+/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/graph.c
+stddef.h
+-
+stdlib.h
+-
+stdbool.h
+-
+stdio.h
+-
+math.h
+-
 graph.h
 /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/graph.h
 limits.h
 /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/limits.h
-memory.h
--
-stdio.h
--
 
-/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/graph.h
-
-/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/main.c
-stdio.h
--
-stdlib.h
--
-graph.h
 /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/graph.h
 
