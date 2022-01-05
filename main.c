@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "graph.h"
 
 int main() {
@@ -14,6 +15,7 @@ int main() {
     //A 4 n 0 2 5 3 3 n 2 0 4 1 1 n 1 3 7 0 2 n 3 S 2 0
 
     while (scanf(" %c", &cmd) != EOF) {
+
         if (cmd == 'A') {
             build_graph_cmd(&head); //also delete graph if exist
             scanf(" %d", &node_size); // num of nodes

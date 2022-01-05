@@ -178,6 +178,7 @@ void deleteGraph_cmd(pnode* head) {
     }
     while (*head) {
         delete_node_cmd(head,*head,true);
+        *head = (*head)->next;
     }
     *head = NULL;
 }
