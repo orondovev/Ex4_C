@@ -9,15 +9,18 @@
 
 int max_node(pnode *head) {
     pnode p = *head;
-    int max = (p)->node_num;
-    p = p->next;
-    while (p) {
-        if (p->node_num > max) {
-            max = p->node_num;
-        }
+    if(p) {
+        int max = (p)->node_num;
         p = p->next;
+        while (p) {
+            if (p->node_num > max) {
+                max = p->node_num;
+            }
+            p = p->next;
+        }
+        return max;
     }
-    return max;
+    return -1;
 }
 
 void return_default(pnode *head) {
