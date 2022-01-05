@@ -13,6 +13,7 @@ int main() {
     pnode src_ = NULL;
     pnode dest_ = NULL;
     //A 4 n 0 2 5 3 3 n 2 0 4 1 1 n 1 3 7 0 2 n 3
+    //A 4 n 0 2 5 3 3 n 2 0 4 1 1 n 1 3 7 0 2 n 3 B 5 0 4 2 1 D 2 2
 
     while (scanf("%c ", &cmd) != EOF) {
         if (cmd == 'A') {
@@ -36,7 +37,7 @@ int main() {
         }
         if (cmd == 'B') {
             printf("\n");
-            scanf("%d ", &src);
+            scanf("%d", &src);
             insert_node_cmd(&head, src);
             while (scanf("%d ", &dest) != 0 && scanf("%d ", &weight) != 0) {
                 dest_ = get_node(&head, dest);
@@ -46,8 +47,8 @@ int main() {
         }
         if (cmd == 'D') {
             printf("\n");
-            scanf("%d ", src);
-            delete_node_cmd(&head , src, 0);
+            scanf("%d ", &src);
+            delete_node_cmd(&head , get_node(&head, src), 1);
         }
         printGraph_cmd(head);
     }
