@@ -8,7 +8,6 @@ int main() {
     pnode head = NULL; //head of Graph nodes list.
     int count = 0;
     int src, dest, weight;
-    pnode src_ = NULL;
     pnode dest_ = NULL;
     //A 4 n 0 2 5 3 3 n 2 0 4 1 1 n 1 3 7 0 2 n 3 S 0 2
     //A 4 n 0 2 5 3 3 n 2 0 4 1 1 n 1 3 7 0 2 n 3 B 5 0 4 2 1 D 2 2
