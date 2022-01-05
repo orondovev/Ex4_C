@@ -2,7 +2,7 @@
 #include "graph.h"
 
 int main() {
-    char cmd;
+    char cmd = '0';
     int node_size;
     pnode head = NULL; //head of Graph nodes list.
     int count = 0;
@@ -13,7 +13,7 @@ int main() {
     //A 4 n 0 2 5 3 3 n 2 0 4 1 1 n 1 3 7 0 2 n 3 B 5 0 4 2 1 D 2 2
     //A 4 n 0 2 5 3 3 n 2 0 4 1 1 n 1 3 7 0 2 n 3 S 2 0
 
-    while (scanf("%c", &cmd) != EOF) {
+    while (scanf(" %c", &cmd) != EOF) {
         if (cmd == 'A') {
             build_graph_cmd(&head); //also delete graph if exist
             scanf(" %d", &node_size); // num of nodes
