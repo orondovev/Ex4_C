@@ -14,6 +14,9 @@ int main() {
     //A 4 n 0 2 5 3 3 n 2 0 4 1 1 n 1 3 7 0 2 n 3 S 2 0
 
     while (scanf("%c", &cmd) != EOF) {
+        if (cmd == 'E') {
+            break;
+        }
         if (cmd == 'A') {
             build_graph_cmd(&head); //also delete graph if exist
             scanf(" %d", &node_size); // num of nodes
@@ -41,17 +44,21 @@ int main() {
                 insert_edge(&head, src, weight, dest_->node_num);
             }
 //            printGraph_cmd(head);
+//            printf("\n");
+//            printGraph_cmd(head);
         }
         if (cmd == 'D') {
             scanf(" %d", &src);
             delete_node_cmd(&head, get_node(&head, src), 1);
+//            printGraph_cmd(head);
+//            printf("\n");
         }
         if (cmd == 'S') {
             src = 0;
             dest = 0;
             scanf(" %d", &src);
             scanf(" %d", &dest);
-            printf("Dijsktra shortest path: %d\n", shortsPath_cmd(head, src, dest));
+            printf("Dijsktra shortest path: %d \n", shortsPath_cmd(head, src, dest));
         }
 //        printGraph_cmd(head);
         if (cmd == 'T') {
@@ -69,6 +76,7 @@ int main() {
         }
     }
     deleteGraph_cmd(&head);
+    printGraph_cmd(head);
     return 0;
 }
 

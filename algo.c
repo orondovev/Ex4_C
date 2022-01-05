@@ -143,9 +143,9 @@ void TSP_cmd(pnode head, int cities[], int len) {
     int ans = INT_MAX;
     possibilities(head, &ans, cities, len, len);
     if(ans == INT_MAX) {
-        printf("TSP shortest path: %d\n", -1);
+        printf("TSP shortest path: %d \n", -1);
     } else {
-        printf("TSP shortest path: %d\n", ans);
+        printf("TSP shortest path: %d \n", ans);
     }
 }
 
