@@ -33,7 +33,6 @@ int main() {
                 }
 //                printGraph_cmd(head);
             }
-
         }
         if (cmd == 'B') {
             printf("\n");
@@ -51,17 +50,28 @@ int main() {
             delete_node_cmd(&head, get_node(&head, src), 1);
         }
 //        printGraph_cmd(head);
-
         if (cmd == 'S')
             scanf("%d ", &src);
             src_ = get_node(&head, src);
             scanf("%d ", &dest);
             dest_ = get_node(&head, dest);
             shortsPath_cmd(head, src_->node_num, dest_->node_num);
+//            shortsPath_cmd(head, src, dest);
+
     }
+        int n;
+        int nodes;
+        if (cmd == 'T') {
+            scanf("%d " , &n);
+            int *size = (int*) malloc(sizeof(int)*n);
 
-//        if (cmd == 'T')
-
+            for (int i = 0; i <n ; ++i) {
+                scanf("%d ", &nodes);
+                size[i] = nodes;
+            }
+            TSP_cmd(head, size,n);
+            free(size);
+        }
     }
 
 

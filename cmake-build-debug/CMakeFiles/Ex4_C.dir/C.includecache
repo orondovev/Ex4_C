@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/graph.h
+/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/graph.h
 
-/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/main.c
+/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/main.c
 stdio.h
 -
 stdlib.h
 -
 graph.h
-/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/graph.h
+/mnt/c/Users/oron/Desktop/GitHub/Ex4_C/graph.h
 
