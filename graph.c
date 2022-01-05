@@ -116,7 +116,7 @@ void delete_node_cmd(pnode *head, pnode data, int flag) {
     if (*head == NULL) {
         return;
     }
-    pnode p = (*head)->next;
+    pnode p = (*head);
     pnode *prev = head;
 
     while (p) {
