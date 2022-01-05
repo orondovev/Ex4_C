@@ -32,10 +32,24 @@ int main() {
                 }
                 printGraph_cmd(head);
             }
+
         }
+        if (cmd == 'B') {
+            printf("\n");
+            scanf("%d ", &src);
+            insert_node_cmd(&head, src);
+            while (scanf("%d ", &dest) != 0 && scanf("%d ", &weight) != 0) {
+                dest_ = get_node(&head, dest);
+                insert_edge(&head, src, weight, dest_->node_num);
+            }
+            printGraph_cmd(head);
+        }
+        if (cmd == 'D') {
+            printf("\n");
+            scanf("%d ", src);
+            delete_node_cmd(&head , src, 0);
+        }
+        printGraph_cmd(head);
     }
 
-
-    return 0;
 }
-//        if (cmd == 'B') {

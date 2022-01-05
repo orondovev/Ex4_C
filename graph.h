@@ -27,7 +27,7 @@ pnode get_node(pnode *, int );
 
 void insert_edge(pnode *head, int, int, int);
 
-void delete_node_cmd(pnode *head, pnode data);
+void delete_node_cmd(pnode *head, pnode data, int);
 
 void printGraph_cmd(pnode head); //for self debug
 void deleteGraph_cmd(pnode *head);
