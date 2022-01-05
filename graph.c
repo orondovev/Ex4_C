@@ -3,32 +3,33 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <math.h>
-//#include "graph.h"
+#include "graph.h"
+#include "limits.h"
 
 typedef struct GRAPH_NODE_ *pnode;
 pnode new_node(int, struct GRAPH_NODE_ *);
 void free_edges(pnode);
 pnode get_node(pnode *, int );
-void delete_node_cmd(pnode *, pnode, bool);
+//void delete_node_cmd(pnode *, pnode, bool);
 void free_all_edges(pnode *, pnode);
 void deleteGraph_cmd(pnode*);
 void printGraph_cmd(pnode);
 
-typedef struct edge_ {
-    pnode endpoint;
-    int weight;
-    struct edge_ *next;
-} edge, *pedge;
+//typedef struct edge_ {
+//    pnode endpoint;
+//    int weight;
+//    struct edge_ *next;
+//} edge, *pedge;
 
 pedge new_edge(int, pnode, pedge);
 
-typedef struct GRAPH_NODE_ {
-    int node_num; // =1
-    pedge edges; // edge_ (w = 5, endpoint = 2)
-    struct GRAPH_NODE_ *next;
-    int weight;
-    int state;
-} node, *pnode;
+//typedef struct GRAPH_NODE_ {
+//    int node_num; // =1
+//    pedge edges; // edge_ (w = 5, endpoint = 2)
+//    struct GRAPH_NODE_ *next;
+//    int weight;
+//    int state;
+//} node, *pnode;
 
 void insert_node_cmd(pnode *head, int data) {
     if (*head == NULL) {
@@ -58,7 +59,7 @@ pnode new_node(int id, struct GRAPH_NODE_ *next) {
     new_node->node_num = id;
     new_node->next = next;
     new_node->edges = NULL;
-    new_node->weight = INFINITY;
+    new_node->weight = INT_MAX;
     new_node->state = 0;
 
     return new_node;
@@ -111,7 +112,7 @@ pedge new_edge(int weight, pnode dest, pedge next) {
     return curr_edge;
 }
 
-void delete_node_cmd(pnode *head, pnode data, bool flag) {
+void delete_node_cmd(pnode *head, pnode data, int flag) {
     if (*head == NULL) {
         return;
     }

@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/algo.c
+graph.h
+/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/graph.h
+math.h
+-
+limits.h
+/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/limits.h
+stdlib.h
+-
+memory.h
+-
+stdio.h
+-
+
 /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/graph.h
 
 /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex4_C/main.c

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "graph.h"
 
-static int size = 0;
+//static int size;
 
 int main() {
     char cmd;
@@ -12,7 +12,7 @@ int main() {
     int src, dest, weight;
     pnode src_ = NULL;
     pnode dest_ = NULL;
-    //A 4 n 0 2 5 3 3 n 2 0 4 1 1 n 1 3 7 0 2 n 3
+    //A 4 n 0 2 5 3 3 n 2 0 4 1 1 n 1 3 7 0 2 n 3 S 0 2
     //A 4 n 0 2 5 3 3 n 2 0 4 1 1 n 1 3 7 0 2 n 3 B 5 0 4 2 1 D 2 2
 
     while (scanf("%c ", &cmd) != EOF) {
@@ -31,7 +31,7 @@ int main() {
                     dest_ = get_node(&head, dest);
                     insert_edge(&head, src_->node_num, weight, dest_->node_num);
                 }
-//                printGraph_cmd(head);
+                printGraph_cmd(head);
             }
 
         }
@@ -53,11 +53,15 @@ int main() {
 //        printGraph_cmd(head);
 
         if (cmd == 'S')
+            src = 0;
+//            dest = 0;
             scanf("%d ", &src);
-            src_ = get_node(&head, src);
+//            src_ = get_node(&head, src);
             scanf("%d ", &dest);
-            dest_ = get_node(&head, dest);
-            shortsPath_cmd(head, src_->node_num, dest_->node_num);
+//            dest_ = get_node(&head, dest);
+            printf("\n");
+            printf("%d" , shortsPath_cmd(head, src, dest));
+
     }
 
 //        if (cmd == 'T')
