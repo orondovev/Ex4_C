@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "graph.h"
 
 int main() {
@@ -18,7 +17,6 @@ int main() {
         if (cmd == 'A') {
             build_graph_cmd(&head); //also delete graph if exist
             scanf("%d ", &node_size); // num of nodes
-            size += node_size;
             while (count < node_size) { // create nodes for act
                 insert_node_cmd(&head, count);
                 count++;
@@ -51,9 +49,7 @@ int main() {
             src = 0;
             dest = 0;
             scanf("%d ", &src);
-            src_ = get_node(&head, src);
             scanf("%d ", &dest);
-            dest_ = get_node(&head, dest);
             printf("Dijsktra shortest path: %d\n" , shortsPath_cmd(head, src, dest));
         }
 //        printGraph_cmd(head);

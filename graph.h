@@ -2,7 +2,6 @@
 #define GRAPH_
 
 typedef struct GRAPH_NODE_ *pnode;;
-static int size;
 typedef struct edge_ {
     int weight;
     pnode endpoint;
