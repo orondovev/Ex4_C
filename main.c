@@ -31,7 +31,7 @@ int main() {
                     dest_ = get_node(&head, dest);
                     insert_edge(&head, src_->node_num, weight, dest_->node_num);
                 }
-                printGraph_cmd(head);
+//                printGraph_cmd(head);
             }
 
         }
@@ -43,14 +43,25 @@ int main() {
                 dest_ = get_node(&head, dest);
                 insert_edge(&head, src, weight, dest_->node_num);
             }
-            printGraph_cmd(head);
+//            printGraph_cmd(head);
         }
         if (cmd == 'D') {
             printf("\n");
             scanf("%d ", &src);
-            delete_node_cmd(&head , get_node(&head, src), 1);
+            delete_node_cmd(&head, get_node(&head, src), 1);
         }
-        printGraph_cmd(head);
+//        printGraph_cmd(head);
+
+        if (cmd == 'S')
+            scanf("%d ", &src);
+            src_ = get_node(&head, src);
+            scanf("%d ", &dest);
+            dest_ = get_node(&head, dest);
+            shortsPath_cmd(head, src_->node_num, dest_->node_num);
     }
 
-}
+//        if (cmd == 'T')
+
+    }
+
+
