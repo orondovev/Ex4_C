@@ -55,7 +55,7 @@ pnode get_min(pnode *head, const float dist[], const int visited[], int len) {
     return get_node(head, node);
 }
 
-void shortsPath_cmd(pnode head, int src, int dest) {
+int shortsPath_cmd(pnode head, int src, int dest) {
     int max_len = max_node(&head) + 1;
     float dist[max_len];
     int visited[max_len];
@@ -86,9 +86,11 @@ void shortsPath_cmd(pnode head, int src, int dest) {
         visited[curr.node_num] = 1;
     }
     if (dist[dest] == INFINITY) {
-        printf("Dijsktra shortest path: %d", -1);
+        printf("Dijsktra shortest path: ");
+        return -1;
     } else {
-        printf("Dijsktra shortest path: %d", (int) dist[dest]);
+        printf("Dijsktra shortest path: ");
+        return (int) dist[dest];
     }
 //    return_default(&head);
 }
@@ -98,8 +100,16 @@ int cmpfunc (const void * a, const void * b) //what is it returning?
     return ( *(int*)a - *(int*)b ); //What is a and b?
 }
 
-void TSP_rec(pnode head, int cities[], int len) {
+void TSP_rec(pnode head, int index, int cities[], int len, int val, int final_val) {
+    pnode p = head;
+    for (int i = 0; i < index; ++i) {
+        p = p->next;
+    }
+    for (int i = 0; i < len; ++i) {
+        int t_val = shortsPath_cmd(head, index, cities[i]);
 
+        
+    }
 }
 
 void TSP_cmd(pnode head, int cities[], int len) {
@@ -109,7 +119,7 @@ void TSP_cmd(pnode head, int cities[], int len) {
     int miss[len];
     qsort(cities, sizeof(int ), len, cmpfunc);
     while (*p) {
-        TSP_rec(head,cities,len);
+        TSP_rec(head,1,cities,len, 0, INFINITY);
     }
 }
 
