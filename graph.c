@@ -97,6 +97,7 @@ void insert_edge(pnode *head, int src_, int weight, int dest_) {
         }
         phead = &((*phead)->next);
     }
+    free(head);
 
 }
 
@@ -127,11 +128,13 @@ void delete_node_cmd(pnode *head, pnode data, int flag) {
             } else{
                 free_edges(p);
             }
+            *prev = p->next;
             free(p);
             p = *prev;
         }
         else{
             prev= &(p->next);
+            free(p); //todo add
             p = p->next;
         }
     }
@@ -152,11 +155,13 @@ void free_all_edges(pnode *head,pnode node) {
                 e = *prev;
             } else {
                 prev = &(e->next);
-                e = e->next;
+                free(e);
+                e = *prev;
             }
         }
         p = p->next;
     }
+    free(p);
 }
 
 void free_edges(pnode node){
