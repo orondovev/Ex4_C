@@ -155,13 +155,13 @@ void free_all_edges(pnode *head,pnode node) {
                 e = *prev;
             } else {
                 prev = &(e->next);
-                free(e);
+//                free(e);
                 e = *prev;
             }
         }
         p = p->next;
     }
-    free(p);
+//    free(p);
 }
 
 void free_edges(pnode node){
