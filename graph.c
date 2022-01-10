@@ -193,7 +193,7 @@ void deleteGraph_cmd(pnode* head) {
         free(noder); //todo add
         noder = *prev;
     }
-    free(head);
+//    free(head);
     head = NULL;
 }
 
