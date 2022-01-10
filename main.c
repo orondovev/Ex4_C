@@ -96,7 +96,7 @@ int main() {
     }
     deleteGraph_cmd(&head);
 //    printGraph_cmd(head);
-    exit(1);
+//    exit(1);
     return 0;
 //    exit(1);
 }
