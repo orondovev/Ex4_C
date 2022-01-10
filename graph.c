@@ -59,7 +59,7 @@ pnode new_node(int id, struct GRAPH_NODE_ *next) {
     new_node->node_num = id;
     new_node->next = next;
     new_node->edges = NULL;
-    new_node->weight = INT_MAX;
+    new_node->weight = INT_MAX - 1;
     new_node->state = 0;
 
     return new_node;
@@ -116,7 +116,7 @@ void delete_node_cmd(pnode *head, pnode data, int flag) {
     if (*head == NULL) {
         return;
     }
-    pnode p = (*head)->next;
+    pnode p = (*head);
     pnode *prev = head;
 
     while (p) {
@@ -176,8 +176,9 @@ void deleteGraph_cmd(pnode* head) {
     if(*head == NULL) {
         return;
     }
+    delete_node_cmd(head,*head,true);
     while (*head) {
-        delete_node_cmd(head,*head,true);
+        *head = (*head)->next;
     }
     *head = NULL;
 }
