@@ -181,11 +181,20 @@ void deleteGraph_cmd(pnode* head) {
     if(*head == NULL) {
         return;
     }
-    delete_node_cmd(head,*head,true);
-    while (*head) {
-        *head = (*head)->next;
+    pnode *edger = head;
+    pnode noder = *head;
+    pnode *prev = head;
+    while (*edger) {
+        free_edges(*edger);
+        *edger = (*edger)->next;
     }
-    *head = NULL;
+    while (noder){
+        prev= &(noder->next);
+        free(noder); //todo add
+        noder = *prev;
+    }
+    free(head);
+    head = NULL;
 }
 
 void build_graph_cmd(pnode *head) {
