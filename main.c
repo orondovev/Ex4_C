@@ -52,20 +52,29 @@ int main() {
         }
 //        printGraph_cmd(head);
 
-        if (cmd == 'S')
+        if (cmd == 'S'){
             src = 0;
 //            dest = 0;
-            scanf("%d ", &src);
+        scanf("%d ", &src);
 //            src_ = get_node(&head, src);
-            scanf("%d ", &dest);
+        scanf("%d ", &dest);
 //            dest_ = get_node(&head, dest);
-            printf("\n");
-            printf("%d" , shortsPath_cmd(head, src, dest));
+        printf("\n");
+        printf("%d" , shortsPath_cmd(head, src, dest));
 
     }
+        int n;
+        int nodes;
+        if (cmd == 'T') {
+            scanf("%d ", &n);
+            int *size = (int *) malloc(sizeof(int) * n);
 
-//        if (cmd == 'T')
-
+            for (int i = 0; i < n; ++i) {
+                scanf("%d ", &nodes);
+                size[i] = nodes;
+            }
+            TSP_cmd(head, size, n);
+            free(size);
+        }
     }
-
-
+}
