@@ -172,7 +172,7 @@ void free_edges(pnode node){
     pedge *prev = &(node->edges);
     while(e){
         *prev = e->next;
-//        free(e);
+        free(e);
         e = *prev;
     }
 }
